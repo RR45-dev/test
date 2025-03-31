@@ -59,8 +59,8 @@ export const content = {
   ],
   hero: {
     title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    firstName: "Raghuram",
+    LastName: "Yerramsetti",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
