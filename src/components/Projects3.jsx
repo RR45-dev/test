@@ -1,46 +1,113 @@
+import { content } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
-import { Pagination, Navigation, Autoplay } from 'swiper';
 
+import ui from "../assets/images/hero/ui.png";
 import proj1 from "../assets/images/hero/proj1.png";
 import proj2 from "../assets/images/hero/proj2.png";
 import proj3 from "../assets/images/hero/proj3.png";
 import proj4 from "../assets/images/hero/proj4.jpg";
 
-const Projects3 = () => {
-  return (
-    <section className="bg-bg_light_primary" id="projects3">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
-        <h2 className="title" data-aos="fade-down">Mobile Projects</h2>
-        <h4 className="subtitle" data-aos="fade-down">Two Slides View</h4>
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper';
+
+const Projects1 = () => {
+  const { Projects } = content;
+
+  return (
+    <section className="bg-bg_light_primary" id="projects1">
+      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
+        <div>
+          <h2 className="title" data-aos="fade-down">{Projects.title}</h2>
+          <h4 className="subtitle" data-aos="fade-down">{Projects.subtitle}</h4>
+        </div>
+
+        <div className="flex items-center lg:flex-row flex-col-reverse gap-1" >
         <Swiper
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={1.5} // Show one big, one small slide
+          slidesPerView={1.5}
           spaceBetween={20}
           pagination={{ clickable: true }}
           navigation={{ clickable: true }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
           modules={[Pagination, Navigation, Autoplay]}
           className="rounded-3xl pb-16 max-w-full drop-shadow-primary"
         >
-          {[proj1, proj2, proj3, proj4].map((image, index) => (
-            <SwiperSlide key={index} className={`transition-transform duration-300 ${index === 0 ? 'scale-110' : 'scale-90 opacity-80'}`}>
-              <img src={image} alt={`Project ${index + 1}`} className="w-full rounded-lg" />
+            {/* Manual SwiperSlide 1 */}
+            <SwiperSlide
+              className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
+              style={{ backgroundColor: 'white' }} >
+              <img src={proj1} alt="Project 1" className="w-full rounded-lg"  />
+              <div className="flex flex-col gap-1 mt-2">
+                <h5 className="font-bold font-Poppins">Vitaldx</h5>
+                <p className="font-Poppins text-sm text-gray-600">Worked on developing new features and fixing bugs for the company's main product.</p>
+                <button className="font-bold text-gray-700 self-end">READ MORE</button>
+              </div>
             </SwiperSlide>
-          ))}
-        </Swiper>
+
+            {/* Manual SwiperSlide 2 */}
+            <SwiperSlide
+              key={2}
+              className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
+            >
+              <img src={proj2} alt="Project 2" className="w-full rounded-lg" />
+              <div className="flex flex-col gap-1 mt-2">
+                <h5 className="font-bold font-Poppins">OneTracker</h5>
+                <p className="font-Poppins text-sm text-gray-600">Developed an online library as part of my internship, featuring all the functions of a real library.</p>
+                <button className="font-bold text-gray-700 self-end">READ MORE</button>
+              </div>
+            </SwiperSlide>
+
+            {/* Manual SwiperSlide 3 */}
+            <SwiperSlide
+              key={3}
+              className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
+            >
+              <img src={proj3} alt="Project 3" className="w-full rounded-lg" />
+              <div className="flex flex-col gap-1 mt-2">
+                <h5 className="font-bold font-Poppins">ESA</h5>
+                <p className="font-Poppins text-sm text-gray-600">Built a Student Management System with a unique feature that predicts future grades based on past results using Machine Learning.</p>
+                <button className="font-bold text-gray-700 self-end">READ MORE</button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide
+              key={4}
+              className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
+            >
+              <img src={proj4} alt="Project 3" className="w-full rounded-lg" />
+              <div className="flex flex-col gap-1 mt-2">
+                <h5 className="font-bold font-Poppins">Microservices Inventory System</h5>
+                <p className="font-Poppins text-sm text-gray-600">Developed a scalable inventory management system using ASP.NET Core and Docker, enhancing real-time tracking and order processing.</p>
+                <button className="font-bold text-gray-700 self-end">READ MORE</button>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide
+              key={5}
+              className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
+            >
+              <img src={ui} alt="Project 3" className="w-full rounded-lg" />
+              <div className="flex flex-col gap-1 mt-2">
+                <h5 className="font-bold font-Poppins">Automated Analytics Dashboard</h5>
+                <p className="font-Poppins text-sm text-gray-600">Built a real-time analytics dashboard with ASP.NET Core and Angular, providing actionable insights and custom reporting.</p>
+                <button className="font-bold text-gray-700 self-end">READ MORE</button>
+              </div>
+            </SwiperSlide>
+
+            {/* Add more SwiperSlide components as needed */}
+          </Swiper>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Projects3;
+export default Projects1;

@@ -31,17 +31,17 @@ const Projects1 = () => {
           <Swiper
             effect={'coverflow'}
             
-            grabCursor={true}
-  centeredSlides={true}
-  loop={true}
-  slidesPerView={3} // Show 3 slides at once
-  spaceBetween={100} // Adjusted space between slides
-  coverflowEffect={{
-    rotate: 10,  // No rotation for the centered slide
-    stretch: 0,
-    depth: 150, // Adds depth to the slides
-    modifier: 1.5,  // Increased modifier for a stronger 3D effect
-    slideShadows: true, // Add shadow for a more realistic 3D effect
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={3} // Show 3 slides at once
+          spaceBetween={100} // Adjusted space between slides
+          coverflowEffect={{
+            rotate: 10,  // No rotation for the centered slide
+            stretch: 0,
+            depth: 150, // Adds depth to the slides
+            modifier: 1.5,  // Increased modifier for a stronger 3D effect
+            slideShadows: true, // Add shadow for a more realistic 3D effect
   }}
   
             pagination={{ clickable: true }}
