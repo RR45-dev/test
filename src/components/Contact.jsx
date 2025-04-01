@@ -11,21 +11,44 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // First, send the email to the admin (or whoever is receiving the form data)
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+        'service_dekt8zq', // Replace with your EmailJS service ID
+        'template_1xivm46', // Replace with your EmailJS template ID for admin notification
+        form.current, // Reference to your form
+        'l_tjbJRDe4SLSw8hS' // Replace with your EmailJS public key
       )
       .then(
         (result) => {
           console.log(result.text);
           // Clear all input field values
-          form.current.reset();
-          // Success toast message
-          toast.success("Email send Successfully");
+          
+
+            emailjs
+              .sendForm(
+                'service_dekt8zq', // Replace with your EmailJS service ID
+                'template_pntcc6t', // Replace with your template ID for the auto-reply
+                form.current, // Reference to your form
+                'l_tjbJRDe4SLSw8hS' // Replace with your EmailJS public key
+              )
+              .then(
+                (result) => {
+                  console.log("Automatic reply sent", result.text);
+                  toast.success("Email sent successfully and an automatic reply has been sent!");
+                },
+                (error) => {
+                  console.log("Automatic reply error", error.text);
+                  toast.error("Failed to send the automatic reply.");
+                }
+              );
+          
+              form.current.reset();
+          toast.success("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
-          toast.error(error.text);
+          toast.error("Failed to send the email.");
         }
       );
   };
@@ -42,13 +65,14 @@ const Contact = () => {
         </h4>
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
+          {/* Contact Form */}
           <form
             ref={form}
             onSubmit={sendEmail}
             data-aos="fade-up"
             className="flex-1 flex flex-col gap-5"
           >
-            {/* Input Name as same as email js templates values */}
+            {/* Input Name as same as emailjs templates values */}
             <input
               type="text"
               name="from_name"
@@ -58,7 +82,7 @@ const Contact = () => {
             />
             <input
               type="email"
-              name="user_email"
+              name="user_email" // Ensure the name matches the email field
               pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
               placeholder="Email Id"
               required
@@ -71,12 +95,14 @@ const Contact = () => {
               required
             ></textarea>
             <button
-              className="btn self-start
-            bg-white text-dark_primary"
+              type="submit"
+              className="btn self-start bg-white text-dark_primary"
             >
               Submit
             </button>
           </form>
+
+          {/* Social Media Section */}
           <div className="flex-1 flex flex-col gap-5">
             {Contact.social_media.map((content, i) => (
               <div
@@ -86,7 +112,12 @@ const Contact = () => {
                 className="flex items-center gap-2"
               >
                 <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="font-Poppins" href={content.link} target="_blank">
+                <a
+                  className="font-Poppins"
+                  href={content.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {content.text}
                 </a>
               </div>

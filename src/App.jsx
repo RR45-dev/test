@@ -4,10 +4,12 @@ import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
 import Projects from "./components/Projects";
+import Projects1 from "./components/Projects1";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import AnimatedText from "./components/Animatedtext";
 import { useEffect } from "react";
 // Animation package
 import Aos from "aos";
@@ -28,13 +30,16 @@ const App = () => {
       <About />
       <Skills />
       
-      <Projects />
+      <Projects1 />
       
       
       <Contact />
-      <footer className="p-3 text-center">
-        <h6 className="mb-3">JOHN ALEX</h6>
-        <p>codeaprogram © All CopyRights Reserved 2022</p>
+      <footer className="p-3 text-center ">
+      
+        <h6>RAGHURAM YERRAMSETTI    </h6>
+        <AnimatedText />
+        <p  className="mb-20">theultimate45 © All CopyRights Reserved 2025</p>
+      
       </footer>
     </div>
   );

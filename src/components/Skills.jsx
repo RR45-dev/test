@@ -77,11 +77,13 @@ const Skills = () => {
         </h4>
         <br />
         <div className="flex flex-wrap gap-4 justify-center">
-          {skills.skills_content.map((skill, i) => (
+          {skills.skills_content.slice(0, 9).map((skill, i) => (
             <div
               key={i}
               data-aos="fade-up"
-              data-aos-delay={i * 400}
+              data-aos-delay={i * 350}
+              
+
               className="bg-white sm:cursor-pointer 
                relative group w-full flex items-center
                 gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
@@ -95,7 +97,7 @@ const Skills = () => {
               </div>
               <div>
                 <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+                <p >{skill.para}</p>
                 <div
                   onClick={() => {
                     setSelectSkill(skill);
@@ -103,7 +105,7 @@ const Skills = () => {
                   }}
                   className="text-xl absolute top-3 right-3"
                 >
-                  {createElement(skills.icon)}
+                  
                 </div>
               </div>
             </div>
