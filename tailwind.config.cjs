@@ -3,6 +3,11 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
+      sf: ['San Francisco', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      as: [
+        "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", 
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif"
+      ],
       Poppins: "Poppins",
       Paprika: "Paprika",
       Inria: "Inria Serif",

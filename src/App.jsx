@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import { useEffect } from "react";
 // Animation package
 import Aos from "aos";
@@ -24,11 +25,12 @@ const App = () => {
     <div className="">
       <Navbar />
       <Hero />
+      <About />
       <Skills />
-      <Service />
+      
       <Projects />
-      <Testimonials />
-      <Hireme />
+      
+      
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">JOHN ALEX</h6>

@@ -1,5 +1,7 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
+import Hero from "./assets/images/Hero/profile1.png";
+
 
 import figma from "./assets/images/Skills/figma.png";
 import sketch from "./assets/images/Skills/sketch.png";
@@ -7,6 +9,17 @@ import ps from "./assets/images/Skills/ps.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
 import python from "./assets/images/Skills/python.png";
+import java from "./assets/images/Skills/java.png";
+import js from "./assets/images/Skills/js.png";
+import aspnet from "./assets/images/Skills/asp.net.png";
+import sql from "./assets/images/Skills/sql.png";
+
+import html from "./assets/images/Skills/html.png";
+import css from "./assets/images/Skills/css.png";
+
+
+
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -34,6 +47,13 @@ import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
+import { CgCodeSlash } from "react-icons/cg";
+import { IoDiamondOutline } from "react-icons/io5";
+
+
+
+
+
 export const content = {
   nav: [
     {
@@ -41,16 +61,16 @@ export const content = {
       icon: TbSmartHome,
     },
     {
-      link: "#skills",
+      link: "#projects",
       icon: BiUser,
     },
     {
-      link: "#services",
-      icon: RiServiceLine,
+      link: "#skills",
+      icon: IoDiamondOutline,
     },
     {
-      link: "#projects",
-      icon: RiProjectorLine,
+      link: "#projects1",
+      icon: CgCodeSlash,
     },
     {
       link: "#contact",
@@ -58,20 +78,50 @@ export const content = {
     },
   ],
   hero: {
+    name: "Raghuram Yerramsetti",
     title: "Web Developer",
-    firstName: "Raghuram",
-    LastName: "Yerramsetti",
-    btnText: "Hire Me",
-    image: Hero_person,
+    
+    
     hero_content: [
       {
-        count: "8+",
+        count: "4+",
         text: "Years of Experinse in Web development",
       },
       {
-        count: "20+",
+        count: "10+",
         text: "Projects Worked in my career",
       },
+    ],
+  },
+  Abouts: {
+    title: "About",
+    subtitle: "MY CREATION",
+    image: person_project,
+    project_content: [
+      {
+        title: "Gym Website",
+        image: project1,
+      },
+      {
+        title: "Social Media web",
+        image: project2,
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+      },
+      {
+        title: "Gym Website",
+        image: project1,
+      },
+      {
+        title: "Social Media web",
+        image: project2,
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+      }
     ],
   },
   skills: {
@@ -79,35 +129,56 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "ASP .NET",
+        para: "Developed secure, scalable web applications and RESTful APIs for businesses.",
+        logo: aspnet,
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
-      },
-      {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
-      },
-      {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
+        name: "React JS",
+        para: "Built dynamic, interactive user interfaces with reusable components and hooks.",
         logo: reactjs,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "Java",
+        para: "Engineered backend systems with strong OOP principles and performance optimization.",
+        logo: java,
+      },
+      {
+        name: "SQL Server",
+        para: "Designed and optimized complex database queries for efficient data management.",
+        logo: sql,
+      },
+      {
+        name: "nodejs",
+        para: "Created fast, scalable backend services with Express and real-time functionality.",
+        logo: nodejs,
       },
       {
         name: "Python",
-        para: "Lorem ipsum text  dummy",
+        para: "Developed data-driven applications and optimized performance for large datasets.",
         logo: python,
       },
+      {
+        name: "HTML",
+        para: "Developed structured, accessible, and SEO-friendly markup for web pages.",
+        logo: html,
+      },
+      {
+        name: "CSS",
+        para: "Designed responsive, visually appealing layouts using modern styling techniques.",
+        logo: css,
+      },
+      {
+        name: "JS",
+        para: "Enhanced web functionality with efficient, interactive, and dynamic scripting solutions.",
+        logo: js,
+      },
+      {
+        name: "JS",
+        para: "Enhanced web functionality with efficient, interactive, and dynamic scripting solutions.",
+        logo: js,
+      }
+
     ],
     icon: MdArrowForward,
   },
@@ -134,8 +205,9 @@ export const content = {
   },
   Projects: {
     title: "Projects",
+    about:"About",
     subtitle: "MY CREATION",
-    image: person_project,
+    image: Hero,
     project_content: [
       {
         title: "Gym Website",
@@ -194,19 +266,19 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "yraghuram799@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:yraghuram799@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+15054605822",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/+15054605822",
       },
       {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        text: "RR45-dev",
+        icon: GrMail,
+        link: "https://github.com/RR45-dev",
       },
     ],
   },
