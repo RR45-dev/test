@@ -124,6 +124,10 @@ export const content = {
       }
     ],
   },
+  About1: {
+    about: "This is the about section text.",
+    image: "path/to/image.jpg"
+  },
   skills: {
     title: "Skills",
     subtitle: "MY TOP SKILLS",

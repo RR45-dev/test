@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import About1 from "./components/About1";
 import AnimatedText from "./components/Animatedtext";
 // Animation package
 import Aos from "aos";
@@ -40,11 +41,11 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <About />
+      
+      {isMobile ? <About1 /> : <About />} {/* Toggle components based on screen size */}
       <Skills />
-      {isMobile ? <Projects /> : <Projects1 />} {/* Toggle components based on screen size */}
-      <Projects2 />
-      <Projects3 />
+      {isMobile ? <Projects3 /> : <Projects1 />} {/* Toggle components based on screen size */}
+      
       <Contact />
       <footer className="p-3 text-center">
         <h6>RAGHURAM YERRAMSETTI</h6>

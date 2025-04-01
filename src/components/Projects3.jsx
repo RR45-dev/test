@@ -36,7 +36,7 @@ const Projects1 = () => {
           spaceBetween={20}
           pagination={{ clickable: true }}
           navigation={{ clickable: true }}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[Pagination, Navigation, Autoplay]}
           className="rounded-3xl pb-16 max-w-full drop-shadow-primary"
         >
