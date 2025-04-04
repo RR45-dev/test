@@ -7,8 +7,8 @@ import proj2 from "../assets/images/hero/proj2.png";
 import proj3 from "../assets/images/hero/proj3.png";
 import proj4 from "../assets/images/hero/proj4.jpg";
 import proj5 from "../assets/images/hero/proj5.jpg";
-import proj6 from "../assets/images/hero/proj6.png";
-import proj7 from "../assets/images/hero/proj7.jpg";
+import proj6 from "../assets/images/hero/proj6.jpg";
+import proj7 from "../assets/images/hero/proj7.png";
 
 
 // Import Swiper styles
