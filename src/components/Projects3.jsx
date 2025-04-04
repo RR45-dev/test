@@ -74,7 +74,7 @@ const Projects1 = () => {
               key={3}
               className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
             >
-              <img src={proj3} alt="Project 3" className="w-full rounded-lg" />
+              <img src={proj5} alt="Project 3" className="w-full rounded-lg" />
               <div className="flex flex-col gap-1 mt-2">
                 <h5 className="font-bold font-Poppins">ESA</h5>
                 <p className="font-Poppins text-sm text-gray-600">Built a Student Management System with a unique feature that predicts future grades based on past results using Machine Learning.</p>
@@ -98,7 +98,7 @@ const Projects1 = () => {
               key={5}
               className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit max-w-[320px] mx-auto transition-transform duration-300"
             >
-              <img src={proj5} alt="Project 3" className="w-full rounded-lg" />
+              <img src={proj6} alt="Project 3" className="w-full rounded-lg" />
               <div className="flex flex-col gap-1 mt-2">
                 <h5 className="font-bold font-Poppins">Automated Analytics Dashboard</h5>
                 <p className="font-Poppins text-sm text-gray-600">Built a real-time analytics dashboard with ASP.NET Core and Angular, providing actionable insights and custom reporting.</p>
