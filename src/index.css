@@ -168,3 +168,72 @@
 .Typewriter__cursor{
   color: rgba(97, 92, 92, 0.4) !important;
 }
+
+.neon1 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #00ffff,
+    0 0 80px #00ffff,
+    0 0 90px #00ffff,
+    0 0 100px #00ffff,
+    0 0 150px #00ffff;
+}
+
+/* Neon 2: Magenta Glow */
+.neon2 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #ff00ff,
+    0 0 80px #ff00ff,
+    0 0 90px #ff00ff,
+    0 0 100px #ff00ff,
+    0 0 150px #ff00ff;
+}
+
+/* Neon 3: Lime Green Glow */
+.neon3 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #39ff14,
+    0 0 80px #39ff14,
+    0 0 90px #39ff14,
+    0 0 100px #39ff14,
+    0 0 150px #39ff14;
+}
+
+/* Neon 4: Hot Pink Glow */
+.neon4 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #ff6ec7,
+    0 0 80px #ff6ec7,
+    0 0 90px #ff6ec7,
+    0 0 100px #ff6ec7,
+    0 0 150px #ff6ec7;
+}
+
+/* Neon 5: Golden Yellow Glow */
+.neon5 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #ffcc00,
+    0 0 80px #ffcc00,
+    0 0 90px #ffcc00,
+    0 0 100px #ffcc00,
+    0 0 150px #ffcc00;
+}

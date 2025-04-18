@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Projects1 from "./components/Projects1";
 import Projects2 from "./components/Projects2";
 import Projects3 from "./components/Projects3";
+import Projects4 from "./components/Projects4";
 import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
@@ -44,7 +45,7 @@ const App = () => {
       
       {isMobile ? <About1 /> : <About />} {/* Toggle components based on screen size */}
       <Skills />
-      {isMobile ? <Projects3 /> : <Projects1 />} {/* Toggle components based on screen size */}
+      {isMobile ? <Projects3 /> : <Projects4 />} {/* Toggle components based on screen size */}
       
       <Contact />
       <footer className="p-3 text-center">
