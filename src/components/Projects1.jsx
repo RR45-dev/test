@@ -1,7 +1,7 @@
 import { content } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import ui from "../assets/images/hero/ui.png";
+import ui from "../assets/images/Hero/ui.png";
 import proj1 from "../assets/images/Hero/proj1.png";
 import proj2 from "../assets/images/Hero/proj2.png";
 import proj3 from "../assets/images/Hero/proj3.png";
