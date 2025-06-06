@@ -2,11 +2,11 @@ import { useState } from "react";
 import { content } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import proj1 from "../assets/images/hero/proj1.png";
-import proj5 from "../assets/images/hero/proj5.jpg";
-import proj6 from "../assets/images/hero/proj6.png";
-import proj7 from "../assets/images/hero/proj7.png";
-import proj9 from "../assets/images/hero/proj9.jpg";
+import proj1 from "../assets/images/Hero/proj1.png";
+import proj5 from "../assets/images/Hero/proj5.jpg";
+import proj6 from "../assets/images/Hero/proj6.png";
+import proj7 from "../assets/images/Hero/proj7.png";
+import proj9 from "../assets/images/Hero/proj9.jpg";
 
 import React, { Suspense, lazy } from "react";
 
