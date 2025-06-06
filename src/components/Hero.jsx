@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { content } from "../Content";
 import Typewriter from 'typewriter-effect';
-import bg from "../assets/images/hero/homepage1.jpg";
+import bg from "../assets/images/Hero/homepage1.jpg";
 
 
 
