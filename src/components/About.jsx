@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import ui from "../assets/images/hero/whiteg.jpg";
+import ui from "../assets/images/Hero/whiteg.jpg";
 
 import { Pagination } from "swiper";
 
