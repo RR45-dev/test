@@ -2,13 +2,13 @@ import { content } from "../Content";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
-import proj1 from "../assets/images/hero/proj1.png";
-import proj2 from "../assets/images/hero/proj2.png";
-import proj3 from "../assets/images/hero/proj3.png";
-import proj4 from "../assets/images/hero/proj4.jpg";
-import proj5 from "../assets/images/hero/proj5.jpg";
-import proj6 from "../assets/images/hero/proj6.png";
-import proj7 from "../assets/images/hero/proj7.png";
+import proj1 from "../assets/images/Hero/proj1.png";
+import proj2 from "../assets/images/Hero/proj2.png";
+import proj3 from "../assets/images/Hero/proj3.png";
+import proj4 from "../assets/images/Hero/proj4.jpg";
+import proj5 from "../assets/images/Hero/proj5.jpg";
+import proj6 from "../assets/images/Hero/proj6.png";
+import proj7 from "../assets/images/Hero/proj7.png";
 
 // Import Swiper styles
 import 'swiper/css';
